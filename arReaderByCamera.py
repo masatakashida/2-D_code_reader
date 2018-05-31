@@ -21,7 +21,9 @@ def asReader():
 		# 検出したマーカーに描画する
 		aruco.drawDetectedMarkers(img, corners, ids, (0,255,0))
 		# 番号をターミナルに表示し続ける
-		print(ids[0][0])
+		print(ids)
+		## ToDo: 番号が配列の配列に収まっているので取り出す。（番号が認識されていないときは、Noneなので、単純に[0][0]で取り出してもエラーがおきるので注意）
+		cv2.imshow('drawDetectedMarkers', img)
 		# キーボード入力の受付
 		cv2.waitKey(1)
 
