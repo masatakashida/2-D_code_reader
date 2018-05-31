@@ -20,8 +20,8 @@ def asReader():
 		corners, ids, rejectedImgPoints = aruco.detectMarkers(img, dictionary)
 		# 検出したマーカーに描画する
 		aruco.drawDetectedMarkers(img, corners, ids, (0,255,0))
-		# マーカが描画された画像を表示
-		cv2.imshow('drawDetectedMarkers', img)
+		# 番号をターミナルに表示し続ける
+		print(ids[0][0])
 		# キーボード入力の受付
 		cv2.waitKey(1)
 
