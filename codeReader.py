@@ -19,12 +19,7 @@ def code_reader_by_camera():
             print(ids[0][0])
         else:
             print(ids)
-        # 二次元コードに描画する
-        #aruco.drawDetectedMarkers(img, corners, ids, (0,255,0))
-        #cv2.imshow('drawDetectedMarkers', img)
-        cv2.waitKey(0)
 
     cap.release()
-    #cv2.destroyAllWindows()
 
 code_reader_by_camera()
