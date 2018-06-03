@@ -6,7 +6,7 @@ import cv2
 aruco = cv2.aruco
 dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 
-def asReader():
+def code_reader_by_camera():
 	# ビデオキャプチャーの開始
 	cap = cv2.VideoCapture(0)
 
@@ -31,4 +31,4 @@ def asReader():
 	cap.release()
 	cv2.destroyAllWindows()
 
-asReader()
+code_reader_by_camera()
