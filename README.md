@@ -3,7 +3,7 @@
 
 ### imagesフォルダ内にマーカ画像を生成 
 ```
-python arMaker.py
+python codeGenerator.py
 ```
 
 ### 番号をターミナルに表示し続ける
