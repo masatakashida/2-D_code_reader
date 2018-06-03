@@ -17,6 +17,3 @@ def arGenerator():
 	cv2.waitKey(0)
 
 arGenerator()
-
-## ToDo
-# 複数のマーカを生成する必要がある
