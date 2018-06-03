@@ -1,6 +1,6 @@
 # README
 ## 実行方法
-### imagesフォルダ内にマーカ画像を生成 
+### imagesフォルダ内に二次元コードを生成 
 ```
 python codeGenerator.py
 ```
