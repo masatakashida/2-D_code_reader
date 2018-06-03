@@ -6,7 +6,7 @@ import cv2
 aruco = cv2.aruco
 dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 
-def arGenerator():
+def code_generator():
     for i in range(20):
         fileName = "images/" + str(i) + ".png"
         generator = aruco.drawMarker(dictionary, i, 100)
@@ -17,4 +17,4 @@ def arGenerator():
         #cv2.imshow('image', img)
         #cv2.waitKey(0)
 
-arGenerator()
+code_generator()
