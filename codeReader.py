@@ -16,8 +16,8 @@ def code_reader_by_camera():
         corners, ids, rejectedImgPoints = aruco.detectMarkers(img, dictionary)
         print(ids)
         # 二次元コードに描画する
-        aruco.drawDetectedMarkers(img, corners, ids, (0,255,0))
-        cv2.imshow('drawDetectedMarkers', img)
+        #aruco.drawDetectedMarkers(img, corners, ids, (0,255,0))
+        #cv2.imshow('drawDetectedMarkers', img)
         cv2.waitKey(1)
 
     cap.release()
