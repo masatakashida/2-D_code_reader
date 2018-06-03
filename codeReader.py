@@ -10,11 +10,9 @@ def code_reader_by_camera():
     cap = cv2.VideoCapture(0)
 
     while True:
-        # ビデオキャプチャーから画像を取得
         ret, frame = cap.read()
-        # sizeを取得
-        Height, Width = frame.shape[:2]
-        img = cv2.resize(frame,(int(Width),int(Height)))
+        height, width = frame.shape[:2]
+        img = cv2.resize(frame,(int(width),int(height)))
         # マーカを検出
         corners, ids, rejectedImgPoints = aruco.detectMarkers(img, dictionary)
         # 検出したマーカーに描画する
