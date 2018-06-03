@@ -4,16 +4,16 @@
 import cv2
 
 aruco = cv2.aruco
-# dictionaryを生成
 dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 
 def arGenerator():
-	fileName = "images/ar.png"
-	generator = aruco.drawMarker(dictionary, 0, 100)
-	cv2.imwrite(fileName, generator)
+	for i in range(20):
+		fileName = "images/" + str(i) + ".png"
+		generator = aruco.drawMarker(dictionary, i, 100)
+		cv2.imwrite(fileName, generator)
 
-	img = cv2.imread(fileName)
-	cv2.imshow('ArMaker', img)
-	cv2.waitKey(0)
+		img = cv2.imread(fileName)
+		cv2.imshow('image', img)
+		cv2.waitKey(0)
 
 arGenerator()
